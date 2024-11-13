@@ -1,248 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Carson Smith Designs</title>
-  <link href="css/style.css" ref="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Designs</title>
+  <link href="assets/style.css" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <script type="module">
+    const modelViewer = document.querySelector('#Fish');
+    const speeds = [10];
+    let i = 0;
+    const play = () => {
+      modelViewer.timeScale = speeds[i++%speeds.length];
+      modelViewer.play({repetitions: 1});
+    };
+    modelViewer.addEventListener('load', play);
+    modelViewer.addEventListener('finished', play);
+  </script>
 </head>
 <body>
-  <div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-<div class="cell"></div>
-
-
-<div class="content">
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-  <div class="css">CARSON</div>
-</div>
+  <h1>CS Designs - By Carson Smith</h1>
+  <div class="row">
+    <div class="column">
+      <model-viewer id="Fish" src="assets/Fish.glb" camera-controls ar autoplay camera-orbit="60deg"></model-viewer>
+    </div>
+    <div class="column">
+      <model-viewer id="Shark" src="assets/Shark.glb" camera-controls ar autoplay camera-orbit="60deg"></model-viewer>
+    </div>
+  </div>
+  <h2>Swim Little Fishy!!!</h2>
 </body>
 </html>
