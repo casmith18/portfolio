@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS Designs</title>
-  <link href="assets/style.css" rel="stylesheet">
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-</head>
-<body>
-  <section id="background">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </section>
- 
-  <h1>CS Designs - By Carson Smith</h1>
-  <div class="row">
-    <div class="column">
-      
-    </div>
-    <div class="column">
-      <model-viewer id="earth" src="assets/earth.glb" camera-controls ar auto-rotate auto-rotate-delay="0" interaction-prompt></model-viewer>
-    </div>
-  </div>
-  <h2>A Web Designer Out of This World</h2>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Designs</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="particles-js"></div>
+    -
+    <!-- partial -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <main>
+      <h1>CS Designs - By Carson Smith</h1>
+      <div class="row">
+        <div class="column"></div>
+        <div class="column">
+          <model-viewer
+            id="earth"
+            src="assets/3d/earth.glb"
+            camera-controls
+            ar
+            auto-rotate
+            auto-rotate-delay="0"
+            interaction-prompt
+          ></model-viewer>
+        </div>
+      </div>
+      <h2>A Web Designer Out of This World</h2>
+    </main>
+  </body>
 </html>
