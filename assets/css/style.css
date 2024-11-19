@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+  /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
+  background-color: #080b0e ;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#earth {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  --progress-bar-color: none;
+  --progress-bar-height: 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
