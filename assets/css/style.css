@@ -1,22 +1,89 @@
+/* Space Fonts
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+*/
+
 html {
   height: 100%;
   /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
   background-color: #080b0e ;
+  margin: 0; 
+  padding: 0;
 }
 
 body {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 10vh;
+}
+
+.navbar-nav .nav-link {
+  font-size: 30px; 
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #E83425;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 40px; 
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+a.navbar-brand{
+  padding-top: 100px;
+  padding-left: 50px;
 }
 
 h1 {
   color: white;
   text-align: center;
   margin-top: 50px;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
@@ -25,12 +92,72 @@ h2 {
   text-align: center;
 }
 
+p {
+  color:white;
+  font-size: 18px;
+}
+
+a {
+  color:white;
+  font-size: 18px;
+}
+
+#porthome{
+  min-height: 90vh;
+  width: auto;
+}
+
 #earth {
   width: 400px;
   height: 400px;
   margin: auto;
   --progress-bar-color: none;
   --progress-bar-height: 0px;
+}
+
+#astro {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+  --progress-bar-color: none;
+  --progress-bar-height: 0px;
+}
+
+#rocketship {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+  --progress-bar-color: none;
+  --progress-bar-height: 0px;
+}
+
+#alien {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+  --progress-bar-color: none;
+  --progress-bar-height: 0px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+footer p{
+  margin: 0%;
+}
+
+footer a{
+  margin-left: 10px;
+  position: relative;
+  z-index: 10; /* Ensure it's on top */
+}
+
+footer a:hover{
+  color:#E83425
 }
 
 .row {
@@ -44,3 +171,6 @@ h2 {
   width: 100%;
   height: 100%;
 }
+
+
+
