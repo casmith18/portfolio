@@ -43,9 +43,10 @@ body {
 }
 
 .navbar {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 10vh;
+  margin-bottom: -70px;
 }
 
 .navbar-nav .nav-link {
@@ -72,10 +73,12 @@ body {
   margin-right: 0;
 }
 
+/*
 a.navbar-brand{
   padding-top: 100px;
   padding-left: 50px;
 }
+*/
 
 h1 {
   color: white;
@@ -86,10 +89,19 @@ h1 {
   font-style: normal;
 }
 
-h2 {
+h2{
   color: white;
   margin: auto;
   text-align: center;
+}
+
+h3{
+  color:white;
+  text-align: center;
+}
+
+h4,h5,li{
+  color: #fff;
 }
 
 p {
@@ -139,6 +151,12 @@ a {
   --progress-bar-height: 0px;
 }
 
+#resume{
+  background-color: rgba(255, 255, 255, 0.3);
+  text-color:black;
+  border-radius: 15px;
+}
+
 footer{
   display: flex;
   align-items: center;
@@ -172,5 +190,54 @@ footer a:hover{
   height: 100%;
 }
 
+/*resume*/
 
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #E83425;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #fff;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #E83425;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #E83425;
+}
 
