@@ -56,6 +56,36 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+/*Scroll Bar*/
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: #078292;
+  width: 16px;
+  
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: #080b0e;
+  
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #e83425;
+  border-radius: 16px;
+  border: 4px solid #078292;
+ 
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
+}
+
 .navbar {
   padding-left: 40px;
   padding-right: 40px;
@@ -260,43 +290,26 @@ footer a:hover {
 }
 
 /*Projects Grid*/
-
 /* Outer container to take full height */
 .outer-container {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start; /* Adjust for vertical alignment */
-}
-
-/* Left column with the main image */
-.left-column {
-  flex: 1; /* Take equal space with right column */
 }
 
 .right-column-2 {
   flex: 1;
 }
 
-/* Right column with the grid of images */
-.right-column {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 5px;
-  height: 100%;
-  padding-top: 50px; /* Space for sorting links */
-  position: relative;
-}
-
 .left-column-2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   height: 100%;
   padding-top: 50px; /* Space for sorting links */
   position: relative;
+  min-height: 756px;
 }
 
 /* Image containers with grid layout */
@@ -308,16 +321,16 @@ footer a:hover {
   overflow: hidden; /* Ensure the border radius is applied to the image */
 }
 
-/* Hover effect to darken images */
+/* Shared image styles */
 .image-container img {
   width: auto;
   height: 200px;
   object-fit: cover;
   transition: opacity 0.3s ease;
-  border-radius: 5px; /* Border radius for the image itself */
+  border-radius: 5px; /* Apply border radius to image */
 }
 
-/* On hover: darken image */
+/* Hover effect to darken images */
 .image-container:hover img {
   opacity: 0.3;
 }
@@ -333,8 +346,8 @@ footer a:hover {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 5; /* Set overlay z-index lower than links */
-  border-radius: 5px; /* Border radius for the overlay */
+  z-index: 5; /* Overlay z-index lower than links */
+  border-radius: 5px; /* Match border radius */
 }
 
 /* On hover: Show the overlay with text and link */
@@ -361,7 +374,7 @@ footer a:hover {
   display: flex;
   justify-content: center; /* Center the tags */
   z-index: 10; /* Ensure they sit above the grid */
-  box-sizing: border-box; /* Ensure padding and borders are included in width */
+  box-sizing: border-box; /* Include padding and borders in width */
 }
 
 /* Styling for tag links */
@@ -371,9 +384,8 @@ footer a:hover {
   font-weight: bold;
   color: #e83425;
   cursor: pointer;
-  position: relative;
-  z-index: 10; /* Ensure links are on top */
   text-align: center;
+  z-index: 10; /* Ensure links are on top */
 }
 
 /* Active state for selected tags */
@@ -386,4 +398,36 @@ footer a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/* Grid items layout */
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  max-height: 600px; /* Limit the visible height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px;
+}
+
+/* Scroll Bar Styles for grid-items */
+/* Customize scrollbar similar to Mac OS */
+.grid-items::-webkit-scrollbar {
+  background-color: #078292;
+  width: 16px; /* Total width of scrollbar */
+}
+
+.grid-items::-webkit-scrollbar-track {
+  background:#080b0e; /* Background of scrollbar track */
+}
+
+.grid-items::-webkit-scrollbar-thumb {
+  background-color: #e83425; /* Scrollbar thumb color */
+  border-radius: 16px; /* Rounded corners */
+  border: 4px solid #078292; /* Space around thumb */
+}
+
+.grid-items::-webkit-scrollbar-button {
+  display: none; /* Hide buttons at ends of scrollbar */
 }
