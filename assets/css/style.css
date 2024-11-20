@@ -24,11 +24,25 @@
 }
 */
 
+/* Colors
+#e83425 dark orange
+#f05829 orange
+#f7a967 dark beige
+#f7dbab light beige
+#078292 light blue
+#15698e blue
+#17254c dark blue
+*/
+
+:root {
+  scroll-behavior: smooth;
+}
+
 html {
   height: 100%;
   /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
-  background-color: #080b0e ;
-  margin: 0; 
+  background-color: #080b0e;
+  margin: 0;
   padding: 0;
 }
 
@@ -39,7 +53,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 .navbar {
@@ -50,7 +64,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-  font-size: 30px; 
+  font-size: 30px;
 }
 
 .navbar-nav .nav-link {
@@ -60,13 +74,12 @@ body {
   font-style: normal;
 }
 
-
 .navbar-nav .nav-link:hover {
-  color: #E83425;
+  color: #e83425;
 }
 
 .navbar-nav .nav-item {
-  margin-right: 40px; 
+  margin-right: 40px;
 }
 
 .navbar-nav .nav-item:last-child {
@@ -89,32 +102,38 @@ h1 {
   font-style: normal;
 }
 
-h2{
+h2 {
   color: white;
   margin: auto;
   text-align: center;
 }
 
-h3{
-  color:white;
+h3 {
+  color: white;
   text-align: center;
 }
 
-h4,h5,li{
+h4,
+h5,
+li {
   color: #fff;
 }
 
 p {
-  color:white;
+  color: white;
   font-size: 18px;
+}
+
+u {
+  color: #078292;
 }
 
 a {
-  color:white;
+  color: white;
   font-size: 18px;
 }
 
-#porthome{
+#porthome {
   min-height: 90vh;
   width: auto;
 }
@@ -151,31 +170,30 @@ a {
   --progress-bar-height: 0px;
 }
 
-#resume{
+#resume {
   background-color: rgba(255, 255, 255, 0.3);
-  text-color:black;
   border-radius: 15px;
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
 }
 
-footer p{
+footer p {
   margin: 0%;
 }
 
-footer a{
+footer a {
   margin-left: 10px;
   position: relative;
   z-index: 10; /* Ensure it's on top */
 }
 
-footer a:hover{
-  color:#E83425
+footer a:hover {
+  color: #e83425;
 }
 
 .row {
@@ -195,7 +213,7 @@ footer a:hover{
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #E83425;
+  border-left: 2px solid #e83425;
   position: relative;
 }
 
@@ -214,7 +232,7 @@ footer a:hover{
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #E83425;
+  color: #e83425;
 }
 
 .resume .resume-item ul {
@@ -238,6 +256,134 @@ footer a:hover{
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #E83425;
+  border: 2px solid #e83425;
 }
 
+/*Projects Grid*/
+
+/* Outer container to take full height */
+.outer-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Adjust for vertical alignment */
+}
+
+/* Left column with the main image */
+.left-column {
+  flex: 1; /* Take equal space with right column */
+}
+
+.right-column-2 {
+  flex: 1;
+}
+
+/* Right column with the grid of images */
+.right-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  height: 100%;
+  padding-top: 50px; /* Space for sorting links */
+  position: relative;
+}
+
+.left-column-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  height: 100%;
+  padding-top: 50px; /* Space for sorting links */
+  position: relative;
+}
+
+/* Image containers with grid layout */
+.image-container {
+  position: relative;
+  display: inline-block;
+  z-index: 1; /* Set lower than links */
+  border-radius: 5px; /* Border radius for the image container */
+  overflow: hidden; /* Ensure the border radius is applied to the image */
+}
+
+/* Hover effect to darken images */
+.image-container img {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-radius: 5px; /* Border radius for the image itself */
+}
+
+/* On hover: darken image */
+.image-container:hover img {
+  opacity: 0.3;
+}
+
+/* Overlay containing text and link */
+.image-container .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5; /* Set overlay z-index lower than links */
+  border-radius: 5px; /* Border radius for the overlay */
+}
+
+/* On hover: Show the overlay with text and link */
+.image-container:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Links inside overlay */
+.overlay a {
+  color: white;
+  text-decoration: none;
+  background-color: #e83425;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Tag links for categories */
+.tags {
+  position: absolute;
+  top: 10px; /* Position at the top of the grid */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the tags */
+  z-index: 10; /* Ensure they sit above the grid */
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+/* Styling for tag links */
+.tags a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #e83425;
+  cursor: pointer;
+  position: relative;
+  z-index: 10; /* Ensure links are on top */
+  text-align: center;
+}
+
+/* Active state for selected tags */
+.tags a.active {
+  color: #078292;
+}
+
+/* Flexbox layout for outer container */
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
