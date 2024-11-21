@@ -109,12 +109,10 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
-// Function to filter images by category
 document.querySelectorAll(".tags a").forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
 
-    // Get all image containers
     const allImages = document.querySelectorAll(".image-container");
     const tags = document.querySelectorAll(".tags a");
     const category = event.target.textContent
@@ -122,7 +120,6 @@ document.querySelectorAll(".tags a").forEach((link) => {
       .trim()
       .replace(" ", "");
 
-    // Loop through images and show/hide based on category
     allImages.forEach((image) => {
       if (category === "all" || image.classList.contains(category)) {
         image.style.display = "inline-block";
@@ -131,10 +128,11 @@ document.querySelectorAll(".tags a").forEach((link) => {
       }
     });
 
-    // Update active state of the links
     tags.forEach((tag) => {
       tag.classList.remove("active");
     });
     event.target.classList.add("active");
   });
 });
+
+

@@ -34,7 +34,6 @@
 #17254c dark blue
 */
 
-
 :root {
   scroll-behavior: smooth;
 }
@@ -79,37 +78,37 @@ body::-webkit-scrollbar-button {
 }
 
 model-viewer {
-  width: 100%; 
-  max-width: 100%; 
-  height: auto; 
-  display: block; 
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 ul {
-  padding-left: 0; 
+  padding-left: 0;
 }
 
 ul li {
-  display: flex; 
-  align-items: flex-start; 
-  margin-bottom: 5px; 
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
 }
 
 ul li::before {
-  content: '★'; 
-  margin-right: 10px; 
-  color: #17254c; 
-  vertical-align: top; 
+  content: "★";
+  margin-right: 10px;
+  color: #17254c;
+  vertical-align: top;
 }
 
 ul li.right-star::before {
-  order: 2; 
-  margin-left: 10px; 
-  margin-right: 0; 
+  order: 2;
+  margin-left: 10px;
+  margin-right: 0;
 }
 
-.para{
-    text-align: justify; 
+.para {
+  text-align: justify;
 }
 
 .navbar {
@@ -148,6 +147,10 @@ h1 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+.header-title {
+  font-size: 60px;
 }
 
 h2 {
@@ -227,12 +230,14 @@ footer {
 
 footer p {
   margin: 0%;
+  font-size: 20px;
 }
 
 footer a {
   margin-left: 10px;
   position: relative;
   z-index: 10;
+  font-size: 20px;
 }
 
 footer a:hover {
@@ -257,7 +262,7 @@ footer a:hover {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .right-column-2 {
@@ -269,7 +274,7 @@ footer a:hover {
   flex-direction: column;
   gap: 10px;
   height: 100%;
-  padding-top: 50px; 
+  padding-top: 50px;
   position: relative;
   min-height: 756px;
 }
@@ -277,9 +282,9 @@ footer a:hover {
 .image-container {
   position: relative;
   display: inline-block;
-  z-index: 1; 
-  border-radius: 5px; 
-  overflow: hidden; 
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .image-container img {
@@ -287,7 +292,7 @@ footer a:hover {
   height: 200px;
   object-fit: cover;
   transition: opacity 0.3s ease;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .image-container:hover img {
@@ -304,8 +309,8 @@ footer a:hover {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 5; 
-  border-radius: 5px; 
+  z-index: 5;
+  border-radius: 5px;
 }
 
 .image-container:hover .overlay {
@@ -323,11 +328,11 @@ footer a:hover {
 
 .tags {
   position: absolute;
-  top: 10px; 
+  top: 10px;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   z-index: 10;
   box-sizing: border-box;
 }
@@ -338,18 +343,18 @@ footer a:hover {
   font-weight: bold;
   color: #080b0e;
   background-color: #e83425;
-  padding-left:5px;
-  padding-right:5px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .tags a.active {
   color: #080b0e;
-  padding-left:5px;
-  padding-right:5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #078292;
   border-radius: 5px;
 }
@@ -365,33 +370,35 @@ footer a:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 10px;
-  max-height: 600px; 
-  overflow-y: auto; 
+  max-height: 600px;
+  overflow-y: auto;
   padding-right: 10px;
 }
 
 .grid-items::-webkit-scrollbar {
   background-color: #078292;
-  width: 16px; 
+  width: 16px;
 }
 
 .grid-items::-webkit-scrollbar-track {
-  background: #080b0e; 
+  background: #080b0e;
 }
 
 .grid-items::-webkit-scrollbar-thumb {
-  background-color: #e83425; 
-  border-radius: 16px; 
-  border: 4px solid #078292; 
+  background-color: #e83425;
+  border-radius: 16px;
+  border: 4px solid #078292;
 }
 
 .grid-items::-webkit-scrollbar-button {
-  display: none; 
+  display: none;
 }
 
 /*Resume*/
 
-#resume,#contact,#project{
+#resume,
+#contact,
+#project {
   z-index: 10;
 }
 
@@ -419,35 +426,39 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.edu h1,.edu h5,.edu p{
+.edu h1,
+.edu h5,
+.edu p {
   text-align: right;
 }
 
 .work {
-  background-color: #078292; 
+  background-color: #078292;
   padding: 10px;
   border-radius: 5px;
   transition: transform 0.3s ease;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .work:hover {
   transform: scale(1.05);
 }
 
-.work h1{
+.work h1 {
   margin-bottom: 18px;
-  color:#080b0e;
+  color: #080b0e;
   text-align: left;
 }
 
-.work h5,.work p,.work a,.work li{
-  color:#080b0e;
+.work h5,
+.work p,
+.work a,
+.work li {
+  color: #080b0e;
 }
 
 .work::-webkit-scrollbar {
-  
   width: 16px;
 }
 
@@ -456,17 +467,17 @@ footer a:hover {
 }
 
 .work::-webkit-scrollbar-thumb {
-  background-color: #e83425; 
-  border-radius: 16px; 
-  border: 4px solid #078292; 
+  background-color: #e83425;
+  border-radius: 16px;
+  border: 4px solid #078292;
 }
 
 .work::-webkit-scrollbar-button {
-  display: none; 
+  display: none;
 }
 
 .skills {
-  background-color: #15698e; 
+  background-color: #15698e;
   padding: 10px;
   border-radius: 5px;
   transition: transform 0.3s ease;
@@ -476,7 +487,7 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.skills h1{
+.skills h1 {
   text-align: right;
 }
 
@@ -485,7 +496,7 @@ footer a:hover {
 }
 
 .awards {
-  background-color: #f7a967; 
+  background-color: #f7a967;
   padding: 10px;
   border-radius: 5px;
   transition: transform 0.3s ease;
@@ -495,15 +506,94 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.awards h1, .awards li{
-  color:#080b0e;
+.awards h1,
+.awards li {
+  color: #080b0e;
   text-align: left;
 }
 
-.h5link{
+.h5link {
   margin-top: 10px;
   text-align: center;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.contactbtn {
+  text-decoration: none;
+}
+
+.email {
+  background-color: #f7a967;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.email:hover {
+  transform: scale(1.05);
+}
+
+.email h1,
+.email h5,
+.email a {
+  text-align: right;
+  color: #080b0e;
+}
+
+.email a,
+.phone a {
+  font-size: 25px;
+}
+
+.phone {
+  background-color: #15698e;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.phone:hover {
+  transform: scale(1.05);
+}
+
+.phone h1 {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.coverltr {
+  background-color: #078292;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.coverltr:hover {
+  transform: scale(1.05);
+}
+
+.coverltr h1 {
+  text-align: right;
+  color: #080b0e;
+}
+
+.linked {
+  background-color: #e83425;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.linked:hover {
+  transform: scale(1.05);
+}
+
+.linked h1 {
+  text-align: left;
+}
+
+.cntct h1 {
+  font-size: 60px;
 }
 
