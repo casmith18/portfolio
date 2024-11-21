@@ -34,6 +34,7 @@
 #17254c dark blue
 */
 
+
 :root {
   scroll-behavior: smooth;
 }
@@ -57,33 +58,58 @@ body {
 }
 
 /*Scroll Bar*/
-/* Customize website's scrollbar like Mac OS
-Not supports in Firefox and IE */
 
-/* total width */
 body::-webkit-scrollbar {
   background-color: #078292;
   width: 16px;
-  
 }
 
-/* background of the scrollbar except button or resizer */
 body::-webkit-scrollbar-track {
   background-color: #080b0e;
-  
 }
 
-/* scrollbar itself */
 body::-webkit-scrollbar-thumb {
   background-color: #e83425;
   border-radius: 16px;
   border: 4px solid #078292;
- 
 }
 
-/* set button(top and bottom of the scrollbar) */
 body::-webkit-scrollbar-button {
-  display:none;
+  display: none;
+}
+
+model-viewer {
+  width: 100%; 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+ul {
+  padding-left: 0; 
+}
+
+ul li {
+  display: flex; 
+  align-items: flex-start; 
+  margin-bottom: 5px; 
+}
+
+ul li::before {
+  content: '★'; 
+  margin-right: 10px; 
+  color: #17254c; 
+  vertical-align: top; 
+}
+
+ul li.right-star::before {
+  order: 2; 
+  margin-left: 10px; 
+  margin-right: 0; 
+}
+
+.para{
+    text-align: justify; 
 }
 
 .navbar {
@@ -116,17 +142,9 @@ body::-webkit-scrollbar-button {
   margin-right: 0;
 }
 
-/*
-a.navbar-brand{
-  padding-top: 100px;
-  padding-left: 50px;
-}
-*/
-
 h1 {
   color: white;
   text-align: center;
-  margin-top: 50px;
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -200,11 +218,6 @@ a {
   --progress-bar-height: 0px;
 }
 
-#resume {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-}
-
 footer {
   display: flex;
   align-items: center;
@@ -219,7 +232,7 @@ footer p {
 footer a {
   margin-left: 10px;
   position: relative;
-  z-index: 10; /* Ensure it's on top */
+  z-index: 10;
 }
 
 footer a:hover {
@@ -238,64 +251,13 @@ footer a:hover {
   height: 100%;
 }
 
-/*resume*/
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #e83425;
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #fff;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #e83425;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #e83425;
-}
-
 /*Projects Grid*/
-/* Outer container to take full height */
+
 .outer-container {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* Adjust for vertical alignment */
+  align-items: flex-start; 
 }
 
 .right-column-2 {
@@ -307,35 +269,31 @@ footer a:hover {
   flex-direction: column;
   gap: 10px;
   height: 100%;
-  padding-top: 50px; /* Space for sorting links */
+  padding-top: 50px; 
   position: relative;
   min-height: 756px;
 }
 
-/* Image containers with grid layout */
 .image-container {
   position: relative;
   display: inline-block;
-  z-index: 1; /* Set lower than links */
-  border-radius: 5px; /* Border radius for the image container */
-  overflow: hidden; /* Ensure the border radius is applied to the image */
+  z-index: 1; 
+  border-radius: 5px; 
+  overflow: hidden; 
 }
 
-/* Shared image styles */
 .image-container img {
   width: auto;
   height: 200px;
   object-fit: cover;
   transition: opacity 0.3s ease;
-  border-radius: 5px; /* Apply border radius to image */
+  border-radius: 5px; 
 }
 
-/* Hover effect to darken images */
 .image-container:hover img {
   opacity: 0.3;
 }
 
-/* Overlay containing text and link */
 .image-container .overlay {
   position: absolute;
   top: 50%;
@@ -346,17 +304,15 @@ footer a:hover {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 5; /* Overlay z-index lower than links */
-  border-radius: 5px; /* Match border radius */
+  z-index: 5; 
+  border-radius: 5px; 
 }
 
-/* On hover: Show the overlay with text and link */
 .image-container:hover .overlay {
   visibility: visible;
   opacity: 1;
 }
 
-/* Links inside overlay */
 .overlay a {
   color: white;
   text-decoration: none;
@@ -365,69 +321,189 @@ footer a:hover {
   border-radius: 3px;
 }
 
-/* Tag links for categories */
 .tags {
   position: absolute;
-  top: 10px; /* Position at the top of the grid */
+  top: 10px; 
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center; /* Center the tags */
-  z-index: 10; /* Ensure they sit above the grid */
-  box-sizing: border-box; /* Include padding and borders in width */
+  justify-content: center; 
+  z-index: 10;
+  box-sizing: border-box;
 }
 
-/* Styling for tag links */
 .tags a {
   margin-right: 10px;
   text-decoration: none;
   font-weight: bold;
-  color: #e83425;
+  color: #080b0e;
+  background-color: #e83425;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  z-index: 10; /* Ensure links are on top */
+  z-index: 10; 
 }
 
-/* Active state for selected tags */
 .tags a.active {
-  color: #078292;
+  color: #080b0e;
+  padding-left:5px;
+  padding-right:5px;
+  background-color: #078292;
+  border-radius: 5px;
 }
 
-/* Flexbox layout for outer container */
 .container-fluid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* Grid items layout */
 .grid-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 10px;
-  max-height: 600px; /* Limit the visible height */
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 600px; 
+  overflow-y: auto; 
   padding-right: 10px;
 }
 
-/* Scroll Bar Styles for grid-items */
-/* Customize scrollbar similar to Mac OS */
 .grid-items::-webkit-scrollbar {
   background-color: #078292;
-  width: 16px; /* Total width of scrollbar */
+  width: 16px; 
 }
 
 .grid-items::-webkit-scrollbar-track {
-  background:#080b0e; /* Background of scrollbar track */
+  background: #080b0e; 
 }
 
 .grid-items::-webkit-scrollbar-thumb {
-  background-color: #e83425; /* Scrollbar thumb color */
-  border-radius: 16px; /* Rounded corners */
-  border: 4px solid #078292; /* Space around thumb */
+  background-color: #e83425; 
+  border-radius: 16px; 
+  border: 4px solid #078292; 
 }
 
 .grid-items::-webkit-scrollbar-button {
-  display: none; /* Hide buttons at ends of scrollbar */
+  display: none; 
 }
+
+/*Resume*/
+
+#resume,#contact,#project{
+  z-index: 10;
+}
+
+.resume-container {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+}
+
+.resume-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu {
+  background-color: #e83425;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.edu:hover {
+  transform: scale(1.05);
+}
+
+.edu h1,.edu h5,.edu p{
+  text-align: right;
+}
+
+.work {
+  background-color: #078292; 
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+.work:hover {
+  transform: scale(1.05);
+}
+
+.work h1{
+  margin-bottom: 18px;
+  color:#080b0e;
+  text-align: left;
+}
+
+.work h5,.work p,.work a,.work li{
+  color:#080b0e;
+}
+
+.work::-webkit-scrollbar {
+  
+  width: 16px;
+}
+
+.work::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.work::-webkit-scrollbar-thumb {
+  background-color: #e83425; 
+  border-radius: 16px; 
+  border: 4px solid #078292; 
+}
+
+.work::-webkit-scrollbar-button {
+  display: none; 
+}
+
+.skills {
+  background-color: #15698e; 
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.skills:hover {
+  transform: scale(1.05);
+}
+
+.skills h1{
+  text-align: right;
+}
+
+.skills li {
+  justify-content: flex-end;
+}
+
+.awards {
+  background-color: #f7a967; 
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.awards:hover {
+  transform: scale(1.05);
+}
+
+.awards h1, .awards li{
+  color:#080b0e;
+  text-align: left;
+}
+
+.h5link{
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
