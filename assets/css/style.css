@@ -609,7 +609,7 @@ footer a:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
+  width: 55px;
   animation: bob 2s infinite ease-in-out;
 }
 
@@ -622,3 +622,6 @@ footer a:hover {
     transform: translate(-50%, -8px);
   }
 }
+
+/*Media querys*/
+
