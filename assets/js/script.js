@@ -134,5 +134,3 @@ document.querySelectorAll(".tags a").forEach((link) => {
     event.target.classList.add("active");
   });
 });
-
-
