@@ -50,7 +50,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-item nav-link" href="#about">About Me</a>
+          <a class="nav-item nav-link" href="#about">Resume</a>
           <a class="nav-item nav-link" href="#projects">Projects</a>
           <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
@@ -58,17 +58,20 @@
     </nav>
 
     <div id="porthome" class="container" style="height: 90vh">
+      
       <!--Home-->
       <div class="row h-100">
         <div class="col-12 col-md-6">
           <h1>I’m Carson Smith,</h1>
-          <p>
-            an <u>Out Of This World</u> web designer. As the creator of CS
+          <p class="para">
+            an <b><i>Out Of This World</i></b> web designer. As the creator of CS
             Designs, I specialize in crafting websites that are as smooth as a
             comet's trail. With a focus on responsive design and
             out-of-this-world user experiences, I’m all about creating digital
-            spaces that truly shine. If you’re ready to launch your next
-            project, I’ve got the skills to take it to new heights.
+            spaces that truly shine. Currently, I am expanding my skill set by
+            learning React.js, SQL, and Java to further elevate my projects. If
+            you’re ready to launch your next project, I’ve got the skills to
+            take it to new heights.
           </p>
         </div>
         <div class="col-12 col-md-6">
@@ -94,7 +97,7 @@
             src="assets/3d/astronaut.glb"
             camera-controls
             ar
-            camera-orbit="130deg 110deg"
+            camera-orbit="160deg 110deg"
             interaction-prompt
             auto-rotate
             auto-rotate-delay="0"
@@ -104,36 +107,65 @@
 
         <!--Resume-->
         <div id="resume" class="col-12 col-md-6">
-          <div class="row">
-            <div class="col-6">
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>
-                  B.A. in Web Design Development, Minor in Information
-                  Technology
-                </h4>
-                <h5>2021 - 2025</h5>
-                <p>University of Arkansas at Little Rock</p>
+          <h1>Resume</h1>
+          <div class="resume-container">
+            
+            <!-- Left Column of Resume -->
+            <div class="resume-column">
+              <div class="section edu">
+                <h1>Education</h1>
+                <h5>B.A. in Web Design Development</h5>
+                <h5>Minor in Information Technology</h5>
+                <p>University of Arkansas at Little Rock (May 2025)</p>
+                <h5>High School Diploma</h5>
+                <p>Häuschen Academy, Little Rock AR</p>
               </div>
-              <div class="resume-item">
-                <h3>Skills</h3>
+              <div class="section skills">
+                <h1>Skills</h1>
                 <ul>
-                  <li>JavaScript</li>
-                  <li>HTML & CSS</li>
-                  <li>Bootstrap</li>
-                  <li>Adobe Suite</li>
-                  <li>WordPress & Elementor</li>
+                  <li class="right-star">JavaScript</li>
+                  <li class="right-star">HTML/CSS</li>
+                  <li class="right-star">Bootstrap</li>
+                  <li class="right-star">MicrosoftAdobe Suite</li>
+                  <li class="right-star">WordPress/Elementor</li>
+                  <li class="right-star">Project Management</li>
                 </ul>
-                <p></p>
               </div>
             </div>
-            <div class="col-lg-6">
-              <h3 class="resume-title">Professional Experience</h3>
 
-              <div class="resume-item">
-                <h4>Web Development Tutor</h4>
-                <h5>2023 - Present</h5>
-                <p>UALR EIT BUILDING, Little Rock, Arkansas</p>
+            <!-- Right Column of Resume -->
+            <div class="resume-column">
+              <div class="section work">
+                <h1>Work Experience</h1>
+                <h5>Web Project Manager</h5>
+                <p>
+                  Digital Renaissance<br />
+                  8/2024 - 11/2024<br />Little Rock, Arkansas
+                </p>
+
+                <ul>
+                  <li>
+                    Led a cross-functional team to create and launch a website
+                    for the De' Medici Foundation, ensuring alignment with
+                    client goals and deadlines.
+                  </li>
+                  <li>
+                    Coordinated project timelines, resources, and team tasks to
+                    ensure efficient collaboration and successful project
+                    delivery.
+                  </li>
+                  <li>
+                    Communicated with clients and stakeholders to gather
+                    feedback, provide progress updates, and implement
+                    improvements for optimal results.
+                  </li>
+                </ul>
+                <h5>CSTEM Ambassador/Web Dev Tutor</h5>
+                <p>
+                  UALR EIT<br />
+                  8/2023 - Present<br />Little Rock, Arkansas –
+                  <a href="https://ualr.edu/" target="_blank">ualr.edu</a>
+                </p>
                 <ul>
                   <li>
                     Responsible for guiding students through the fundamentals of
@@ -141,36 +173,53 @@
                     design principles.
                   </li>
                   <li>
-                    Responsible for guiding students through the fundamentals of
-                    web design, including HTML, CSS, JavaScript, and responsive
-                    design principles.
+                    Assist in troubleshooting coding errors and optimizing
+                    website performance for various devices and screen sizes.
+                  </li>
+                  <li>
+                    Evaluate student progress and offer constructive advice to
+                    enhance their learning experience.
+                  </li>
+                </ul>
+                <h5>Construction Project Lead</h5>
+                <p>
+                  RS CONSTRUCTION<br />
+                  5/2020 - Present<br />Benton, Arkansas
+                </p>
+                <ul>
+                  <li>
+                    Responsible for overseeing and coordinating all aspects of
+                    exterior construction projects, including siding, gutters,
+                    soffit, and fascia installation.
+                  </li>
+                  <li>
+                    Responsibilities include managing project timelines,
+                    supervising crew members, and ensuring high-quality
+                    workmanship in siding installations.
+                  </li>
+                  <li>
+                    Coordinate material deliveries, budget management, and
+                    client communication to ensure timely project completion.
                   </li>
                 </ul>
               </div>
-              <div class="resume-item">
-                <h4>Construction Project Lead</h4>
-                <h5>2020 - Present</h5>
-                <p>RS CONSTRUCTION, Benton, Arkansas</p>
+              <div class="section awards">
+                <h1>Awards</h1>
                 <ul>
                   <li>
-                    Responsible for overseeing and coordinating all aspects of
-                    exterior construction projects, including siding, gutters,
-                    soffit, and fascia installation.
+                    Web Design and Development Outstanding Junior Award 2024
                   </li>
-                  <li>
-                    Responsible for overseeing and coordinating all aspects of
-                    exterior construction projects, including siding, gutters,
-                    soffit, and fascia installation.
-                  </li>
+                  <li>UALR DCSTEM Dean’s List 4x</li>
+                  <li>UALR Chancellor’s List 4x</li>
                 </ul>
               </div>
             </div>
           </div>
+          <h5 class="h5link"><a href="assets/">PDF Resume</a></h5>
         </div>
       </div>
-
+      
       <!--Projects-->
-
       <div id="projects" class="row h-10" style="height: 100vh">
         <div class="col-12 col-md-6">
           <h1>My Projects</h1>
@@ -184,17 +233,27 @@
               <a href="#">Social</a>
               <a href="#">Design</a>
             </div>
-      
+
             <div class="grid-items">
               <div class="image-container frontend">
-                <img src="assets/img/webexample1.jpg" alt="de' medici foundation site" />
+                <img
+                  src="assets/img/webexample1.jpg"
+                  alt="de' medici foundation site"
+                />
                 <div class="overlay">
                   <p>De' Medici Foundation</p>
-                  <a href="https://web-projects.net/digital-renaissance/" target="_blank">View</a>
+                  <a
+                    href="https://web-projects.net/digital-renaissance/"
+                    target="_blank"
+                    >View</a
+                  >
                 </div>
               </div>
               <div class="image-container frontend">
-                <img src="assets/img/webexample2.jpg" alt="153 outfitters site" />
+                <img
+                  src="assets/img/webexample2.jpg"
+                  alt="153 outfitters site"
+                />
                 <div class="overlay">
                   <p>153 Outfitters</p>
                   <a
@@ -205,7 +264,10 @@
                 </div>
               </div>
               <div class="image-container frontend">
-                <img src="assets/img/webexample3.jpg" alt="lake ouachita site" />
+                <img
+                  src="assets/img/webexample3.jpg"
+                  alt="lake ouachita site"
+                />
                 <div class="overlay">
                   <p>Lake Ouachita</p>
                   <a
@@ -230,7 +292,10 @@
                 </div>
               </div>
               <div class="image-container backend">
-                <img src="assets/img/programmingexample2.jpg" alt="currency value history" />
+                <img
+                  src="assets/img/programmingexample2.jpg"
+                  alt="currency value history"
+                />
                 <div class="overlay">
                   <p>Currency Value History</p>
                   <a
@@ -241,7 +306,10 @@
                 </div>
               </div>
               <div class="image-container backend">
-                <img src="assets/img/programmingexample3.jpg" alt="Unit Converter" />
+                <img
+                  src="assets/img/programmingexample3.jpg"
+                  alt="Unit Converter"
+                />
                 <div class="overlay">
                   <p>Unit Converter</p>
                   <a
@@ -252,7 +320,10 @@
                 </div>
               </div>
               <div class="image-container database">
-                <img src="assets/img/databaseexample1.jpg" alt="record sales database" />
+                <img
+                  src="assets/img/databaseexample1.jpg"
+                  alt="record sales database"
+                />
                 <div class="overlay">
                   <p>Record Sales Database</p>
                   <a
@@ -263,7 +334,10 @@
                 </div>
               </div>
               <div class="image-container database">
-                <img src="assets/img/databaseexample2.jpg" alt="jewelry sales database" />
+                <img
+                  src="assets/img/databaseexample2.jpg"
+                  alt="jewelry sales database"
+                />
                 <div class="overlay">
                   <p>Jewelry Sales Database</p>
                   <a
@@ -274,7 +348,10 @@
                 </div>
               </div>
               <div class="image-container database">
-                <img src="assets/img/databaseexample3.jpg" alt="schools database" />
+                <img
+                  src="assets/img/databaseexample3.jpg"
+                  alt="schools database"
+                />
                 <div class="overlay">
                   <p>Schools Database</p>
                   <a
@@ -291,48 +368,84 @@
                 />
                 <div class="overlay">
                   <p>Digital Renaissance Project Charter</p>
-                  <a href="assets/pdfs/Digital_Renaissance_Project_Charter.pdf" target="_blank"
+                  <a
+                    href="assets/pdfs/Digital_Renaissance_Project_Charter.pdf"
+                    target="_blank"
                     >View</a
                   >
                 </div>
               </div>
               <div class="image-container writing">
-                <img src="assets/img/writingexample2.jpg" alt="theoretical approaches to film editing" />
+                <img
+                  src="assets/img/writingexample2.jpg"
+                  alt="theoretical approaches to film editing"
+                />
                 <div class="overlay">
                   <p>Theoretical Approaches to Film Editing</p>
-                  <a href="assets/pdfs/Theoretical Approaches to Film Editing_ Analysis Paper - Carson Smith.docx.pdf" target="_blank">View</a>
+                  <a
+                    href="assets/pdfs/Theoretical Approaches to Film Editing_ Analysis Paper - Carson Smith.docx.pdf"
+                    target="_blank"
+                    >View</a
+                  >
                 </div>
               </div>
               <div class="image-container writing">
-                <img src="assets/img/writingexample3.jpg" alt="web accessibility" />
+                <img
+                  src="assets/img/writingexample3.jpg"
+                  alt="web accessibility"
+                />
                 <div class="overlay">
                   <p>Web Accessibility</p>
-                  <a href="assets/pdfs/Web Accessibility - Carson Smith.pdf" target="_blank">View</a>
+                  <a
+                    href="assets/pdfs/Web Accessibility - Carson Smith.pdf"
+                    target="_blank"
+                    >View</a
+                  >
                 </div>
               </div>
               <div class="image-container social">
-                <img src="assets/img/socialexample1.jpg" alt="super chickens blog" />
+                <img
+                  src="assets/img/socialexample1.jpg"
+                  alt="super chickens blog"
+                />
                 <div class="overlay">
                   <p>Super Chickens Blog</p>
-                  <a href="https://carsonitgarnet.wordpress.com/2024/02/04/super-chickens-and-the-potential-pitfalls-of-teamwork/" target="_blank">View</a>
+                  <a
+                    href="https://carsonitgarnet.wordpress.com/2024/02/04/super-chickens-and-the-potential-pitfalls-of-teamwork/"
+                    target="_blank"
+                    >View</a
+                  >
                 </div>
               </div>
               <div class="image-container social">
-                <img src="assets/img/socialexample2.jpg" alt="classroom culture" />
+                <img
+                  src="assets/img/socialexample2.jpg"
+                  alt="classroom culture"
+                />
                 <div class="overlay">
                   <p>Classroom Culture</p>
-                  <a href="https://carsonitgarnet.wordpress.com/2023/11/02/it-garnet-cultural-analysis/" target="_blank">View</a>
+                  <a
+                    href="https://carsonitgarnet.wordpress.com/2023/11/02/it-garnet-cultural-analysis/"
+                    target="_blank"
+                    >View</a
+                  >
                 </div>
               </div>
               <div class="image-container design">
-                <img src="assets/img/logo.jpg" alt="animal logo for performance motorsports company" />
+                <img
+                  src="assets/img/logo.jpg"
+                  alt="animal logo for performance motorsports company"
+                />
                 <div class="overlay">
                   <p>Animal Logo for Performance Motorsports Company</p>
                   <a href="assets/img/logo.jpg" target="_blank">View</a>
                 </div>
               </div>
               <div class="image-container design">
-                <img src="assets/img/netflixtitle.jpg" alt="netflix title card" />
+                <img
+                  src="assets/img/netflixtitle.jpg"
+                  alt="netflix title card"
+                />
                 <div class="overlay">
                   <p>Fictional Netflix Title Card</p>
                   <a href="assets/img/netflixtitle.jpg" target="_blank">View</a>
@@ -348,7 +461,7 @@
             </div>
           </div>
         </div>
-      
+
         <div class="col-12 col-md-6 rocketship">
           <model-viewer
             id="rocketship"
@@ -360,15 +473,14 @@
             auto-rotate
             auto-rotate-delay="0"
             disable-zoom
-            orientation="0 3.7 0 3.14159"  
+            orientation="0 3.7 0 3.14159"
           ></model-viewer>
         </div>
       </div>
 
       <!--Contact-->
-
-      <div id="contact" class="row h-10" style="height: 90vh">
-        <div class="col-12 col-md-6 alien">
+      <div id="about" class="row h-10" style="height: 100vh">
+        <div class="col-12 col-md-6 astro">
           <model-viewer
             id="alien"
             src="assets/3d/alien.glb"
@@ -381,15 +493,118 @@
             disable-zoom
           ></model-viewer>
         </div>
-        <div class="col-12 col-md-6">
-          <h1>Make Contact With Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-            deserunt natus optio delectus, accusamus eveniet ab doloremque
-            consectetur earum, ex ad! Ducimus ex nam soluta vitae commodi ipsam
-            culpa temporibus quae voluptate, in neque exercitationem ipsum, a,
-            laudantium quis quidem?
-          </p>
+
+        <!--Contact-->
+        <div id="contact" class="col-12 col-md-6">
+          <h1>Make First Contact</h1>
+          <div class="resume-container">
+            
+            <!-- Left Column of Resume -->
+            <div class="resume-column">
+              <div class="section edu">
+                <h1>Education</h1>
+                <h5>B.A. in Web Design Development</h5>
+                <h5>Minor in Information Technology</h5>
+                <p>University of Arkansas at Little Rock (May 2025)</p>
+                <h5>High School Diploma</h5>
+                <p>Häuschen Academy, Little Rock AR</p>
+              </div>
+              <div class="section skills">
+                <h1>Skills</h1>
+                <ul>
+                  <li class="right-star">JavaScript</li>
+                  <li class="right-star">HTML/CSS</li>
+                  <li class="right-star">Bootstrap</li>
+                  <li class="right-star">MicrosoftAdobe Suite</li>
+                  <li class="right-star">WordPress/Elementor</li>
+                  <li class="right-star">Project Management</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Column of Resume -->
+            <div class="resume-column">
+              <div class="section work">
+                <h1>Work Experience</h1>
+                <h5>Web Project Manager</h5>
+                <p>
+                  Digital Renaissance<br />
+                  8/2024 - 11/2024<br />Little Rock, Arkansas
+                </p>
+
+                <ul>
+                  <li>
+                    Led a cross-functional team to create and launch a website
+                    for the De' Medici Foundation, ensuring alignment with
+                    client goals and deadlines.
+                  </li>
+                  <li>
+                    Coordinated project timelines, resources, and team tasks to
+                    ensure efficient collaboration and successful project
+                    delivery.
+                  </li>
+                  <li>
+                    Communicated with clients and stakeholders to gather
+                    feedback, provide progress updates, and implement
+                    improvements for optimal results.
+                  </li>
+                </ul>
+                <h5>CSTEM Ambassador/Web Dev Tutor</h5>
+                <p>
+                  UALR EIT<br />
+                  8/2023 - Present<br />Little Rock, Arkansas –
+                  <a href="https://ualr.edu/" target="_blank">ualr.edu</a>
+                </p>
+                <ul>
+                  <li>
+                    Responsible for guiding students through the fundamentals of
+                    web design, including HTML, CSS, JavaScript, and responsive
+                    design principles.
+                  </li>
+                  <li>
+                    Assist in troubleshooting coding errors and optimizing
+                    website performance for various devices and screen sizes.
+                  </li>
+                  <li>
+                    Evaluate student progress and offer constructive advice to
+                    enhance their learning experience.
+                  </li>
+                </ul>
+                <h5>Construction Project Lead</h5>
+                <p>
+                  RS CONSTRUCTION<br />
+                  5/2020 - Present<br />Benton, Arkansas
+                </p>
+                <ul>
+                  <li>
+                    Responsible for overseeing and coordinating all aspects of
+                    exterior construction projects, including siding, gutters,
+                    soffit, and fascia installation.
+                  </li>
+                  <li>
+                    Responsibilities include managing project timelines,
+                    supervising crew members, and ensuring high-quality
+                    workmanship in siding installations.
+                  </li>
+                  <li>
+                    Coordinate material deliveries, budget management, and
+                    client communication to ensure timely project completion.
+                  </li>
+                </ul>
+              </div>
+              <div class="section awards">
+                <h1>Awards</h1>
+                <ul>
+                  <li>
+                    Web Design and Development Outstanding Junior Award 2024
+                  </li>
+                  <li>UALR DCSTEM Dean’s List 4x</li>
+                  <li>UALR Chancellor’s List 4x</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h5 class="h5link"><a>PDF Resume</a></h5>
         </div>
       </div>
 
