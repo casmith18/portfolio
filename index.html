@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/png/alien-ship.png" type="image/x-icon">
+    <link rel="icon" href="assets/png/personallogo-icon.png" type="image/x-icon">
   </head>
 
   <body style="background-color: transparent">
@@ -86,6 +86,9 @@
             interaction-prompt
             disable-zoom
           ></model-viewer>
+          <div class="rocket-container">
+            <img src="assets/png/rocket-icon.png" alt="Scroll Down Rocket Icon" class="rocket">
+          </div>
         </div>
       </div>
 
@@ -102,6 +105,7 @@
             auto-rotate
             auto-rotate-delay="0"
             disable-zoom
+            rotation-per-second="2deg"
           ></model-viewer>
         </div>
 
@@ -468,12 +472,13 @@
             src="assets/3d/rocketship.glb"
             camera-controls
             ar
-            camera-orbit="180deg 70deg"
+            camera-orbit="140deg 70deg"
             interaction-prompt
             auto-rotate
             auto-rotate-delay="0"
             disable-zoom
             orientation="0 3.7 0 3.14159"
+            rotation-per-second="-8deg"
           ></model-viewer>
         </div>
       </div>
@@ -491,35 +496,31 @@
             auto-rotate
             auto-rotate-delay="0"
             disable-zoom
+            rotation-per-second="2deg"
           ></model-viewer>
         </div>
 
         <!--Contact-->
         <div id="contact" class="col-12 col-md-6">
-          <h1 class="header-title">First Contact</h1>
+          <h1 class="header-title">Make Contact</h1>
           <div class="resume-container cntct">
             
-            <!-- Left Column of Resume -->
+            <!-- Left Column of Contact -->
             <div class="resume-column">
-              
-             
               <div class="section email">
                 <a class="contactbtn" href="mailto:casmith18@ualr.edu" target="_blank">
                 <h1>Email</h1>
                 <h5><a href="mailto:casmith18@ualr.edu" target="_blank">casmith18@ualr.edu</a></h5>
               </a>
               </div>
-            
-             
             <div class="section coverltr">
               <a class="contactbtn" href="assets/pdfs/CoverLetter.docx.pdf" target="_blank">
                 <h1>Cover Letter</h1>
               </a>
-            
               </div>
             </div>
 
-            <!-- Right Column of Resume -->
+            <!-- Right Column of Contact -->
             <div class="resume-column">
               <div class="section phone">
                 <a class="contactbtn" href="tel:+15015172788" target="_blank">
