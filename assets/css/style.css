@@ -600,24 +600,25 @@ footer a:hover {
 }
 
 .rocket-container {
-  position: relative; 
-  height: 0; 
-  overflow: visible; 
+  position: relative;
+  height: 0;
+  overflow: visible;
 }
 
 .rocket {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px; 
+  width: 40px;
   animation: bob 2s infinite ease-in-out;
 }
 
 @keyframes bob {
-  0%, 100% {
-    transform: translate(-50%, 0); 
+  0%,
+  100% {
+    transform: translate(-50%, 0);
   }
   50% {
-    transform: translate(-50%, -8px); 
+    transform: translate(-50%, -8px);
   }
 }
