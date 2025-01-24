@@ -252,8 +252,11 @@ footer a:hover {
 
 #particles-js {
   position: fixed;
+  top: 0; 
+  left: 0; 
   width: 100%;
-  height: 100%;
+  height: 100%; 
+  
 }
 
 /*Projects Grid*/
@@ -624,4 +627,99 @@ footer a:hover {
 }
 
 /*Media querys*/
+
+/*sm*/
+@media (min-width: 576px) {
+  
+}
+
+@media (max-width: 575px) {
+  model-viewer {
+    pointer-events: none; 
+  }
+
+  img{
+    width: 250px;
+  }
+}
+
+/*md*/
+@media (min-width: 768px) {
+  
+}
+
+/*lg*/
+@media (min-width: 992px) {
+  #porthome{
+    height: 90vh;
+    }
+    #about,#projects{
+      height: 100vh;
+    }
+ 
+}
+
+@media (max-width: 991px) {
+
+  #earth{
+    width: 250px;
+    height: 250px;
+    margin-top: 150px;
+  }
+
+  #astro{
+    width: 400px;
+    height: 400px;
+  }
+
+  #rocketship{
+    width: 400px;
+    height: 400px;
+  }
+
+  #alien{
+    width: 400px;
+    height: 400px;
+  }
+
+  .rocket-container{
+    visibility: hidden;
+  }
+
+}
+
+/*xl*/
+@media (min-width: 1200px) {
+  
+}
+
+/*xxl*/
+@media (min-width: 1400px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
