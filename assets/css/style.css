@@ -163,11 +163,6 @@ h1 {
   font-style: normal;
 }
 
-.header-title {
-  font-size: 60px;
-  font-family: "Space Mono", monospace;
-}
-
 h2 {
   color: white;
   margin: auto;
@@ -366,7 +361,7 @@ footer a:hover {
   cursor: pointer;
   text-align: center;
   z-index: 10;
-  size: 20px;
+  font-size: 20px;
 }
 
 .tags a.active {
@@ -375,7 +370,7 @@ footer a:hover {
   padding-right: 5px;
   background-color: #078292;
   border-radius: 5px;
-  size: 25px;
+  
 }
 
 .container-fluid {
@@ -735,15 +730,56 @@ footer a:hover {
     visibility: hidden;
   }
 
+  .cslogo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .navbar {
-    padding: 0px;
-    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer {
+    padding-top: 50px;
+  }
+  
+}
+
+@media (max-width: 630px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .cntct h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px; 
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4, ul, p {
+    font-size: 13px;
+  }
+
+  #porthome{
+    max-width: 380px;
+  }
+
+  .tags a{
+    font-size: 14px;
+  }
+
+  .right-star{
+    font-size: 8px;
   }
 }
 
-footer {
-  padding-top: 30px;
-}
 
 /*xl*/
 @media (min-width: 1200px) {
