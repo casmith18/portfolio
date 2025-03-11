@@ -153,7 +153,7 @@ const portHome = document.getElementById("porthome");
 
 navbarToggle.addEventListener("click", () => {
   if (navbarToggle.getAttribute("aria-expanded") === "true") {
-    portHome.style.paddingTop = "150px";
+    portHome.style.paddingTop = "200px";
   } else {
     portHome.style.paddingTop = "0";
   }
