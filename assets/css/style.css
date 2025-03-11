@@ -732,6 +732,10 @@ footer a:hover {
   .rocket-container {
     visibility: hidden;
   }
+
+  .navbar {
+    padding: 0px;
+  }
 }
 
 footer {
