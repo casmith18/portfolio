@@ -109,6 +109,34 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
+//particle js mobile no-move
+if (window.innerWidth <= 767) {
+  // Adjust this value if needed
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      size: { value: 3 },
+      move: { enable: false }, // Disables movement
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: false },
+        onclick: { enable: false },
+      },
+    },
+  });
+} else {
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      size: { value: 3 },
+      move: { enable: true }, // Enables movement on desktop
+    },
+  });
+}
+
+//mixitup
 var mixer = mixitup(".itemsgrid", {
   selectors: {
     target: ".image-container",
