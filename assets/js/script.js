@@ -109,28 +109,52 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
+var mixer = mixitup(".itemsgrid", {
+  selectors: {
+    target: ".image-container",
+  },
+  load: {
+    filter: ".all",
+  },
+});
+
+document.querySelectorAll(".image-container").forEach((item) => {
+  item.classList.add("all");
+});
+
 document.querySelectorAll(".tags a").forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
 
-    const allImages = document.querySelectorAll(".image-container");
     const tags = document.querySelectorAll(".tags a");
+    tags.forEach((tag) => {
+      tag.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+
     const category = event.target.textContent
       .toLowerCase()
       .trim()
       .replace(" ", "");
 
-    allImages.forEach((image) => {
-      if (category === "all" || image.classList.contains(category)) {
-        image.style.display = "inline-block";
-      } else {
-        image.style.display = "none";
-      }
-    });
-
-    tags.forEach((tag) => {
-      tag.classList.remove("active");
-    });
-    event.target.classList.add("active");
+    if (category === "all") {
+      mixer.filter(".all");
+    } else {
+      mixer.filter("." + category);
+    }
   });
+});
+
+//add padding to top of #porthome when menu is toggled
+
+const navbarToggle = document.querySelector(".navbar-toggler");
+const portHome = document.getElementById("porthome");
+
+navbarToggle.addEventListener("click", () => {
+  if (navbarToggle.getAttribute("aria-expanded") === "true") {
+    portHome.style.paddingTop = "150px";
+  } else {
+    portHome.style.paddingTop = "0";
+  }
 });
