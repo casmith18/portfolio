@@ -101,12 +101,6 @@ ul li::before {
   vertical-align: top;
 }
 
-ul li.right-star::before {
-  order: 2;
-  margin-left: 10px;
-  margin-right: 0;
-}
-
 .para {
   text-align: justify;
 }
@@ -441,9 +435,7 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.edu h1,
-.edu h5,
-.edu p {
+.edu h1{
   text-align: right;
 }
 
@@ -506,9 +498,6 @@ footer a:hover {
   text-align: right;
 }
 
-.skills li {
-  justify-content: flex-end;
-}
 
 .awards {
   background-color: #f7a967;
@@ -521,7 +510,11 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.awards h1,
+.awards h1{
+  color: #080b0e;
+  text-align: left;
+}
+
 .awards li {
   color: #080b0e;
   text-align: left;
@@ -789,9 +782,6 @@ footer a:hover {
     font-size: 14px;
   }
 
-  .right-star{
-    font-size: 8px;
-  }
 }
 
 
