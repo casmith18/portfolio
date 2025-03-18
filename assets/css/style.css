@@ -364,7 +364,6 @@ footer a:hover {
   padding-right: 5px;
   background-color: #078292;
   border-radius: 5px;
-  
 }
 
 .container-fluid {
@@ -435,7 +434,7 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.edu h1{
+.edu h1 {
   text-align: right;
 }
 
@@ -498,7 +497,6 @@ footer a:hover {
   text-align: right;
 }
 
-
 .awards {
   background-color: #f7a967;
   padding: 10px;
@@ -510,7 +508,7 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.awards h1{
+.awards h1 {
   color: #080b0e;
   text-align: left;
 }
@@ -750,7 +748,6 @@ footer a:hover {
   footer {
     padding-top: 50px;
   }
-  
 }
 
 @media (max-width: 630px) {
@@ -763,27 +760,27 @@ footer a:hover {
   }
 
   h2 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   h3 {
     font-size: 15px;
   }
 
-  h4, ul, p {
+  h4,
+  ul,
+  p {
     font-size: 13px;
   }
 
-  #porthome{
+  #porthome {
     max-width: 380px;
   }
 
-  .tags a{
+  .tags a {
     font-size: 14px;
   }
-
 }
-
 
 /*xl*/
 @media (min-width: 1200px) {
@@ -794,33 +791,34 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
-  .contact-container {
+  .contact-container,
+  .resume-container {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
-  .contact-column {
+  .contact-column,
+  .resume-column {
     width: 100%;
   }
 
-.section h5, 
-.section h5 a {
-  text-align: center;
-  width: 100%; /* Ensures full width to allow centering */
-  display: block; /* Ensures it behaves as a block element */
-  margin: 0 auto; /* Centers it horizontally */
-}
+  .section h5,
+  .section h5 a {
+    text-align: center;
+    width: 100%; /* Ensures full width to allow centering */
+    display: block; /* Ensures it behaves as a block element */
+    margin: 0 auto; /* Centers it horizontally */
+  }
 
-.footerh1, 
-.email h1, 
-.coverltr h1, 
-.linked h1, 
-.phone h1 {
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-
+  .footerh1,
+  .resumeh1,
+  .email h1,
+  .coverltr h1,
+  .linked h1,
+  .phone h1 {
+    text-align: center !important;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
