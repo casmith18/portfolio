@@ -482,11 +482,31 @@ footer a:hover {
   display: none;
 }
 
+.skills::-webkit-scrollbar {
+  width: 16px;
+}
+
+.skills::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.skills::-webkit-scrollbar-thumb {
+  background-color: #e83425;
+  border-radius: 16px;
+  border: 4px solid #15698e;
+}
+
+.skills::-webkit-scrollbar-button {
+  display: none;
+}
+
 .skills {
   background-color: #15698e;
   padding: 10px;
   border-radius: 5px;
   transition: transform 0.3s ease;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .skills:hover {
